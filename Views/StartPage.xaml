@@ -18,6 +18,7 @@
                 Grid.Row="1" 
                 Margin="15"
                 Text="+   Adicionar Tarefa" 
+                Clicked="Button_Clicked"
                 HorizontalOptions="Center" 
                 VerticalOptions="End"
                  /> 

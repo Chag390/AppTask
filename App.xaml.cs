@@ -8,7 +8,7 @@ namespace AppTask
         {
             InitializeComponent();
 
-            //MainPage = new NavigationPage(new StartPage()); 
+           // MainPage = new NavigationPage(new StartPage()); 
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
