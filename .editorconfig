@@ -2,3 +2,6 @@
 
 # CS0618: O tipo ou membro é obsoleto
 dotnet_diagnostic.CS0618.severity = suggestion
+
+# IDE0320: Tornar a função anônima estática
+dotnet_diagnostic.IDE0320.severity = silent
