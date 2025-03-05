@@ -4,16 +4,36 @@
              x:Class="AppTask.Views.AddEditTaskPage"
              Title="AddEditTaskPage">
     <Grid>
-        <BoxView HeightRequest="5" Color="{StaticResource Black}" VerticalOptions="Start"/>
+        <BoxView 
+            HeightRequest="5" 
+            Color="{StaticResource Black}" 
+            VerticalOptions="Start"/>
         <VerticalStackLayout Padding="15">
             
-            <Button HorizontalOptions="End" Text="X"/>
+            <Button 
+                HorizontalOptions="End" 
+                Text="X" 
+                Clicked="CloseModal"
+                Padding="0"
+                MinimumHeightRequest="31"
+                MinimumWidthRequest="31"
+                
+                />
             <Entry Placeholder="Tarefa"/>
             <Editor Placeholder="Descrição"/>
             <DatePicker />
             <StackLayout Orientation="Horizontal">
-                <Label  Text="Etapas (Subtarefas)" VerticalOptions="Center"/>
-                <Button  Text="+" HorizontalOptions="EndAndExpand"/>
+                <Label  
+                    Text="Etapas (Subtarefas)" 
+                    VerticalOptions="Center"/>
+                <Button  
+                    Text="+" 
+                    HorizontalOptions="EndAndExpand"
+                    MinimumHeightRequest="31"
+                    MinimumWidthRequest="31"
+                    Clicked="AddStep"
+                    Padding="0"
+                    />
             </StackLayout>
             <!--<Grid>
                     <Grid.ColumnDefinitions>
@@ -26,16 +46,24 @@
 
             <Grid ColumnDefinitions="30, *, 30">
                 <CheckBox/>
-                <Label Grid.Column="1" Text="Etapa" VerticalOptions="Center"/>
-                <Label Grid.Column="2" Text="Trash" VerticalOptions="Center" HorizontalOptions="End"/>
+                <Label 
+                    Grid.Column="1" 
+                    Text="Etapa" 
+                    VerticalOptions="Center"/>
+                <Label 
+                    Grid.Column="2" 
+                    Text="Trash" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="End"/>
             </Grid>
-
-            
-    
 
         </VerticalStackLayout>
 
-        <Button HorizontalOptions="Center" VerticalOptions="End" Margin="15" Text="Salvar"/>
+        <Button 
+            HorizontalOptions="Center" 
+            VerticalOptions="End" Margin="15" 
+            Text="Salvar"
+            Clicked="Save"/>
 
     </Grid>
 </ContentPage>
