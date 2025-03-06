@@ -8,7 +8,7 @@
             HeightRequest="5" 
             Color="{StaticResource Black}" 
             VerticalOptions="Start"/>
-        <VerticalStackLayout Padding="15">
+        <VerticalStackLayout Padding="15" Spacing="10">
             
             <Button 
                 HorizontalOptions="End" 
@@ -19,9 +19,15 @@
                 MinimumWidthRequest="31"
                 
                 />
-            <Entry Placeholder="Tarefa"/>
-            <Editor Placeholder="Descrição"/>
+            <Border StrokeShape="RoundRectangle 10">
+                <Entry Placeholder="Tarefa"/>
+            </Border>
+            <Border StrokeShape="RoundRectangle 10">
+            <Editor Placeholder="Descrição" HeightRequest="150"/>
+            </Border>
+            <Border StrokeShape="RoundRectangle 10">
             <DatePicker />
+            </Border>
             <StackLayout Orientation="Horizontal">
                 <Label  
                     Text="Etapas (Subtarefas)" 
