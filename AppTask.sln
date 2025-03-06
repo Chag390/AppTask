@@ -5,6 +5,8 @@ VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTask", "AppTask.csproj", "{0F7BA346-793A-46C6-B5F7-D1872CF3D1F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTask.Models", "..\AppTask.Model\AppTask.Models.csproj", "{7118EBDC-C47D-4505-90E4-ADE02BB62DCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -16,6 +18,10 @@ Global
 		{0F7BA346-793A-46C6-B5F7-D1872CF3D1F7}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{0F7BA346-793A-46C6-B5F7-D1872CF3D1F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F7BA346-793A-46C6-B5F7-D1872CF3D1F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7118EBDC-C47D-4505-90E4-ADE02BB62DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7118EBDC-C47D-4505-90E4-ADE02BB62DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7118EBDC-C47D-4505-90E4-ADE02BB62DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7118EBDC-C47D-4505-90E4-ADE02BB62DCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
