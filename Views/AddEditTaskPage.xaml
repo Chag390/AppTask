@@ -1,45 +1,41 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppTask.Views.AddEditTaskPage"
-             Title="AddEditTaskPage">
+<ContentPage
+    x:Class="AppTask.Views.AddEditTaskPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="AddEditTaskPage">
     <Grid>
-        <BoxView 
-            HeightRequest="5" 
-            Color="{StaticResource Black}" 
-            VerticalOptions="Start"/>
+        <BoxView
+            HeightRequest="5"
+            VerticalOptions="Start"
+            Color="{StaticResource Black}" />
         <VerticalStackLayout Padding="15" Spacing="10">
-            
-            <Button 
-                HorizontalOptions="End" 
-                Text="X" 
-                Clicked="CloseModal"
+
+            <Button
                 Padding="0"
+                Clicked="CloseModal"
+                HorizontalOptions="End"
                 MinimumHeightRequest="31"
                 MinimumWidthRequest="31"
-                
-                />
+                Text="X" />
             <Border StrokeShape="RoundRectangle 10">
-                <Entry Placeholder="Tarefa"/>
+                <Entry Placeholder="Tarefa" />
             </Border>
             <Border StrokeShape="RoundRectangle 10">
-            <Editor Placeholder="Descrição" HeightRequest="150"/>
+                <Editor HeightRequest="150" Placeholder="Descrição" />
             </Border>
             <Border StrokeShape="RoundRectangle 10">
-            <DatePicker />
+                <DatePicker x:Name="DatePicker_TaskDate" />
             </Border>
             <StackLayout Orientation="Horizontal">
-                <Label  
-                    Text="Etapas (Subtarefas)" 
-                    VerticalOptions="Center"/>
-                <Button  
-                    Text="+" 
+                <Label Text="Etapas (Subtarefas)" VerticalOptions="Center" />
+                <Button
+                    Padding="0"
+                    Clicked="AddStep"
                     HorizontalOptions="EndAndExpand"
                     MinimumHeightRequest="31"
                     MinimumWidthRequest="31"
-                    Clicked="AddStep"
-                    Padding="0"
-                    />
+                    Text="+" />
             </StackLayout>
             <!--<Grid>
                     <Grid.ColumnDefinitions>
@@ -51,25 +47,26 @@
             </Grid>-->
 
             <Grid ColumnDefinitions="30, *, 30">
-                <CheckBox/>
-                <Label 
-                    Grid.Column="1" 
-                    Text="Etapa" 
-                    VerticalOptions="Center"/>
-                <Label 
-                    Grid.Column="2" 
-                    Text="Trash" 
-                    VerticalOptions="Center" 
-                    HorizontalOptions="End"/>
+                <CheckBox />
+                <Label
+                    Grid.Column="1"
+                    Text="Etapa"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Column="2"
+                    HorizontalOptions="End"
+                    Text="Trash"
+                    VerticalOptions="Center" />
             </Grid>
 
         </VerticalStackLayout>
 
-        <Button 
-            HorizontalOptions="Center" 
-            VerticalOptions="End" Margin="15" 
+        <Button
+            Margin="15"
+            Clicked="Save"
+            HorizontalOptions="Center"
             Text="Salvar"
-            Clicked="Save"/>
+            VerticalOptions="End" />
 
     </Grid>
 </ContentPage>
