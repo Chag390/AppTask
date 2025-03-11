@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTask", "AppTask.csproj",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTask.Models", "..\AppTask.Model\AppTask.Models.csproj", "{7118EBDC-C47D-4505-90E4-ADE02BB62DCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTask.Database", "..\AppTask.Database\AppTask.Database.csproj", "{29A0AA65-6807-427C-87A9-B08B60109283}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +24,10 @@ Global
 		{7118EBDC-C47D-4505-90E4-ADE02BB62DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7118EBDC-C47D-4505-90E4-ADE02BB62DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7118EBDC-C47D-4505-90E4-ADE02BB62DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29A0AA65-6807-427C-87A9-B08B60109283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A0AA65-6807-427C-87A9-B08B60109283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A0AA65-6807-427C-87A9-B08B60109283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A0AA65-6807-427C-87A9-B08B60109283}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
